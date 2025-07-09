@@ -141,16 +141,108 @@ img {
 }
 
 /*=============== HEADER ===============*/
+.header {
+  width: 100%;
+  background-color: var(--body-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: 0.5s; /* for Animation Dark Mode */
+}
 
 /*=============== NAV ===============*/
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-/* Show menu */
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background-color: var(--container-color);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 0;
+    width: 90%;
+    top: -100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: 0.4s;
+    border-radius: 2rem;
+    z-index: var(--z-fixed);
+  }
+}
 
-/* Change background header */
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+.nav__link,
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.nav__toggle {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* Show Menu */
+.show-menu {
+  top: calc(var(--header-height) + 1rem);
+}
+
+/* Change Background Header */
 
 /*=============== HOME ===============*/
 
 /*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #1a1a1a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: var(--font-semi-bold);
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button__header {
+  display: none;
+}
+
+.button-link {
+  background: none;
+  padding: 0;
+  color: var(--title-color);
+}
+
+.button-link:hover {
+  background-color: transparent;
+}
+
+.button-flex {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  padding: 0.75rem 1rem;
+}
+
+.button__icon {
+  font-size: 1.5rem;
+}
 
 /*=============== ABOUT ===============*/
 
@@ -166,11 +258,13 @@ img {
 
 /*=============== SCROLL UP ===============*/
 
-/* Show Scroll Up*/
+/* Show Scroll Up */
 
 /*=============== SCROLL BAR ===============*/
 
 /*=============== MEDIA QUERIES ===============*/
-/* For small devices */
-/* For medium devices */
-/* For large devices */
+/* For Small Devices */
+
+/* For Medium Devices */
+
+/* For Large Devices */
