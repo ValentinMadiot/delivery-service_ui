@@ -200,6 +200,27 @@ img {
   top: calc(var(--header-height) + 1rem);
 }
 
+/* Active Link */
+.active-link {
+  position: relative;
+}
+
+.active-link::before {
+  content: "";
+  position: absolute;
+  bottom: -0.25rem;
+  /* bottom: -.75rem; */
+  right: 0%;
+  /* left: 45%; */
+  width: 75%;
+  /* width: 5px; */
+  height: 3px;
+  /* height: 5px; */
+  background-color: var(--first-color);
+  /* background-color: var(--title-color); */
+  /* border-radius: 50%; */
+}
+
 /* Change Background Header */
 
 /*=============== HOME ===============*/
