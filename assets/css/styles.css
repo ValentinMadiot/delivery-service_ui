@@ -267,6 +267,17 @@ img {
 }
 
 /*=============== SECURITY ===============*/
+.security__container {
+  gap: 2.5rem;
+}
+
+.security__data {
+  text-align: center;
+}
+
+.security__description {
+  margin-bottom: var(--mb-1-5);
+}
 
 /*=============== SERVICES ===============*/
 
