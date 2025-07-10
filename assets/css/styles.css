@@ -552,8 +552,8 @@ body.dark-theme {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .home__img {
-    order: 1;
+  .home__data {
+    order: -1;
   }
   .home__container,
   .about__container,
@@ -568,9 +568,9 @@ body.dark-theme {
   .contact__description {
     text-align: initial;
   }
-  .about__img,
-  .app__img {
-    order: -1;
+  .about__data,
+  .app__data {
+    order: 1;
   }
 }
 

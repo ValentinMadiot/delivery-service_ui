@@ -100,3 +100,46 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+/*=============== SVG IMAGES ===============*/
+fetch("assets/img/home-illustration.svg")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("home__img-svg").innerHTML = data;
+  });
+
+fetch("assets/img/about-illustration.svg")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("about__img-svg").innerHTML = data;
+  });
+
+fetch("assets/img/security-illustration.svg")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("security__img-svg").innerHTML = data;
+  });
+
+fetch("assets/img/services1-illustration.svg")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("services-1__img-svg").innerHTML = data;
+  });
+
+fetch("assets/img/services2-illustration.svg")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("services-2__img-svg").innerHTML = data;
+  });
+
+fetch("assets/img/services3-illustration.svg")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("services-3__img-svg").innerHTML = data;
+  });
+
+fetch("assets/img/app-illustration.svg")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("app__img-svg").innerHTML = data;
+  });
