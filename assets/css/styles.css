@@ -93,10 +93,41 @@ img {
 }
 
 /*=============== THEME ===============*/
+/* Variables Dark theme */
+body.dark-theme {
+  --first-color-light: hsl(var(--hue), var(--sat), 75%);
+  --title-color: hsl(var(--hue), 4%, 95%);
+  --text-color: hsl(var(--hue), 4%, 80%);
+  --body-color: hsl(var(--hue), 8%, 13%);
+  --container-color: hsl(var(--hue), 8%, 16%);
+  --scroll-bar-color: hsl(var(--hue), 4%, 32%);
+  --scroll-thumb-color: hsl(var(--hue), 4%, 24%);
+}
 
-/*========== Variables Dark theme ==========*/
+/* Button Dark/Light */
+/* .change-theme {
+  position: absolute;
+  right: 1.5rem;
+  top: 2.2rem;
+  color: var(--title-color);
+  font-size: 1.8rem;
+  cursor: pointer;
+} */
 
-/*========== Button Dark/Light ==========*/
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: 0.3s; /* For Animation Dark Mode */
+}
+
+.change-theme:hover {
+  color: var(--first-color);
+}
+
+.dark-theme .footer {
+  background-color: var(--container-color);
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
@@ -190,8 +221,16 @@ img {
   font-weight: var(--font-semi-bold);
 }
 
+.nav__buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav__toggle {
-  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
   cursor: pointer;
 }
 
